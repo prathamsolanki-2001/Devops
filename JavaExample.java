@@ -4,12 +4,12 @@ public class JavaExample {
  public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter the marks of first subject: ");
-        double num1 = scan.nextDouble();
+        //System.out.print("Enter the marks of first subject: ");
+        double num1 = System.getenv("num1");
         System.out.print("Enter the marks of second subject: ");
-        double num2 = scan.nextDouble();
+        double num2 = System.getenv("num2");
         System.out.print("Enter the marks of third subject: ");
-        double num3 = scan.nextDouble();
+        double num3 = System.getenv("num3");
         scan.close();
         System.out.print("The average of entered marks is:" + avr(num1, num2, num3) );
     }
