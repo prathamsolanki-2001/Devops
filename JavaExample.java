@@ -5,11 +5,14 @@ public class JavaExample {
     {
         Scanner scan = new Scanner(System.in);
         //System.out.print("Enter the marks of first subject: ");
-        double num1 = System.getenv("num1");
-        System.out.print("Enter the marks of second subject: ");
-        double num2 = System.getenv("num2");
-        System.out.print("Enter the marks of third subject: ");
-        double num3 = System.getenv("num3");
+        String num11 = System.getenv("num1");
+        int num1 = Integer.parseInt(num11);
+        //System.out.print("Enter the marks of second subject: ");
+        String num22 = System.getenv("num2");
+        int num1 = Integer.parseInt(num11);
+        //System.out.print("Enter the marks of third subject: ");
+        String num33 = System.getenv("num3");
+        int num1 = Integer.parseInt(num11);
         scan.close();
         System.out.print("The average of entered marks is:" + avr(num1, num2, num3) );
     }
