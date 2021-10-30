@@ -17,7 +17,7 @@ public class JavaExample {
         System.out.print("The average of entered marks is:" + avr(num1, num2, num3) );
     }
 
-  public static double avr(double a, double b, double c)
+  public static int avr(int a, int b, int c)
     {
         return (a + b + c) / 3;
     }
